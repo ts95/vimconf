@@ -23,7 +23,7 @@ function PasteFromClipboard()
     set nopaste
 endfunction
 
-map <C-v> :call PasteFromClipboard()<CR>
+map ø :call PasteFromClipboard()<CR>
 
 " Syntastic
 let g:syntastic_mode_map = { 'mode': 'active',
