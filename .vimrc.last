@@ -17,6 +17,14 @@ set startofline
 map <C-n> :NERDTreeToggle<CR>
 map <C-m> :NERDTreeFind<CR>
 
+function PasteFromClipboard()
+    set paste
+    normal! "+p
+    set nopaste
+endfunction
+
+map <C-v> :call PasteFromClipboard()<CR>
+
 " Syntastic
 let g:syntastic_mode_map = { 'mode': 'active',
     \ 'active_filetypes': ['python', 'javascript', 'c', 'cpp'],
