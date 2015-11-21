@@ -326,11 +326,10 @@
                 exe "normal! f".c."v".a:motion.c
             endfunction
 
-            " Temporarily disable this to get around a bug.
-            " onoremap a :<C-u>call <SID>NextTextObject('a')<CR>
-            " xnoremap a :<C-u>call <SID>NextTextObject('a')<CR>
-            " onoremap i :<C-u>call <SID>NextTextObject('i')<CR>
-            " xnoremap i :<C-u>call <SID>NextTextObject('i')<CR>
+            onoremap a :<C-u>call <SID>NextTextObject('a')<CR>
+            xnoremap a :<C-u>call <SID>NextTextObject('a')<CR>
+            onoremap i :<C-u>call <SID>NextTextObject('i')<CR>
+            xnoremap i :<C-u>call <SID>NextTextObject('i')<CR>
         """ }}}
         """ Toggle syntax highlighting {{{
             function! ToggleSyntaxHighlighthing()
