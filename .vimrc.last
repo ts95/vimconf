@@ -6,7 +6,7 @@ set startofline
 " au
 " augroup RainbowParentheses
 "     let blacklist = ['swift']
-"     autocmd! 
+"     autocmd!
 "     autocmd VimEnter * if index(blacklist, &ft) < 0 | RainbowParenthesesToggle
 "     autocmd FileType * if index(blacklist, &ft) < 0 | RainbowParenthesesLoadRound
 "     autocmd FileType * if index(blacklist, &ft) < 0 | RainbowParenthesesLoadSquare
@@ -51,8 +51,10 @@ let g:jsx_ext_required = 0
 augroup MyFileTypeRules
     autocmd!
     autocmd BufNewFile,BufRead *.es6 set ft=javascript
-    autocmd BufNewFile,BufRead *.twig set ft=html
-    autocmd BufNewFile,BufRead *.twig.php set ft=html
+    autocmd BufNewFile,BufRead *.swig set ft=html tw=0
+    autocmd BufNewFile,BufRead *.twig set ft=html tw=0
+    autocmd BufNewFile,BufRead *.twig.php set ft=html tw=0
+    autocmd BufNewFile,BufRead *.vue set ft=html tw=0
 augroup END
 
 " php-vim
